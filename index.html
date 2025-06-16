@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="CurrencyConverter.js"></script>
+</head>
+
+<body>
+    <div class='bg-yellow-500 h-screen p-8 text-center'>
+        <div class='bg-green-400 p-4 mt-[20%] rounded'>
+            <div>
+                <label class='font-bold text-xl'>From</label>
+                <select id='fromVal' class='border border-black rounded-xl m-2 '>
+                    <option value='USD'>USD ($)</option>
+                    <option value="EUR">EURO (€)</option>
+                    <option value='INR'>INR (₹)</option>
+                    <option value="GBP">GBP (£)</option>
+                    <option value="JPY">JPY (¥)</option>
+                    <option value="AUD">AUD ($)</option>
+                    <option value="CAD">CAD ($)</option>
+                    <option value="CNY">CNY (¥)</option>
+                    <option value="RUB">RUB (₽)</option>
+                    <option value="BRL">BRL (R$)</option>
+                    <option value="ZAR">ZAR (R)</option>
+                    <option value="MXN">MXN ($)</option>
+                    <option value="SGD">SGD ($)</option>
+                    <option value="NZD">NZD ($)</option>
+                    <option value="HKD">HKD (HK$)</option>
+                    <option value="ARS">ARS ($)</option>
+                    <option value="BZD">BZD (Bz$)</option>
+                    <option value="KZT">KZT (₸)</option>
+                    <option value="MYR">MYR (RM)</option>
+                    <option value="SEK">SEK (kr)</option>
+                    <option value="THB">THB (฿)</option>
+                    <option value="TRY">TRY (₺)</option>
+                    <option value="UAH">UAH (₴)</option>
+                    <option value="VND">VND (₫)</option>
+                    <option value="BHD">BHD (د.ب)</option>
+                    <option value="DKK">DKK (kr)</option>
+                    <option value="VEF">VEF (Bs)</option>
+                    <option value="RON">RON (lei)</option>
+                    <option value="QAR">QAR (ر.ق)</option>
+                    <option value="MAD">MAD (درهم)</option>
+                    <option value="MNT">MNT (₮)</option>
+                    <option value="MUR">MUR (₨)</option>
+                    <option value="LTL">LTL (Lt)</option>
+                    <option value="LVL">LVL (lvl)</option>
+                    <option value="KWD">KWD (ك.د)</option>
+                    <option value="ILS">ILS (₪)</option>
+                    <option value="HUF">HUF (Ft)</option>
+                </select>
+
+                <input id='input' type='number' class='border border-indigo-500 p-1' />
+            </div>
+
+            <div>
+                <button id='swaps' class='bg-blue-500 p-1 text-sm text-red-500 font-bold rounded-lg ml-12 m-2 text-left'>
+                    Swap Currencies
+                </button>
+            </div>
+
+            <div>
+                <label class='font-bold text-xl'>To</label>
+                <select id='toVal' class='border border-black rounded-xl m-2 ml-8'>
+                    <option value='INR'>INR (₹)</option>
+                    <option value='USD'>USD ($)</option>
+                    <option value="EUR">EUR (€)</option>
+                    <option value="GBP">GBP (£)</option>
+                    <option value="JPY">JPY (¥)</option>
+                    <option value="AUD">AUD ($)</option>
+                    <option value="CAD">CAD ($)</option>
+                    <option value="CNY">CNY (¥)</option>
+                    <option value="RUB">RUB (₽)</option>
+                    <option value="BRL">BRL (R$)</option>
+                    <option value="ZAR">ZAR (R)</option>
+                    <option value="MXN">MXN ($)</option>
+                    <option value="SGD">SGD ($)</option>
+                    <option value="NZD">NZD ($)</option>
+                    <option value="HKD">HKD (HK$)</option>
+                    <option value="ARS">ARS ($)</option>
+                    <option value="BZD">BZD (Bz$)</option>
+                    <option value="KZT">KZT (₸)</option>
+                    <option value="MYR">MYR (RM)</option>
+                    <option value="SEK">SEK (kr)</option>
+                    <option value="THB">THB (฿)</option>
+                    <option value="TRY">TRY (₺)</option>
+                    <option value="UAH">UAH (₴)</option>
+                    <option value="VND">VND (₫)</option>
+                    <option value="BHD">BHD (د.ب)</option>
+                    <option value="DKK">DKK (kr)</option>
+                    <option value="VEF">VEF (Bs)</option>
+                    <option value="RON">RON (lei)</option>
+                    <option value="QAR">QAR (ر.ق)</option>
+                    <option value="MAD">MAD (درهم)</option>
+                    <option value="MNT">MNT (₮)</option>
+                    <option value="MUR">MUR (₨)</option>
+                    <option value="LTL">LTL (Lt)</option>
+                    <option value="LVL">LVL (lvl)</option>
+                    <option value="KWD">KWD (ك.د)</option>
+                    <option value="ILS">ILS (₪)</option>
+                    <option value="HUF">HUF (Ft)</option>
+                </select>
+                <input id='output' type='number' class='border border-indigo-500 p-1' />
+            </div>
+            <div id='exchangeRate' class='text-center mt-5 text-blue-500'>
+
+            </div>
+        </div>
+    </div>
+   <script src="index.js"></script>
+
+
+</body>
+
+</html>
