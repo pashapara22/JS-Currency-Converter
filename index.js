@@ -26,6 +26,7 @@ document.addEventListener('DOMContentLoaded', function() {
             if (data && data.rates && data.rates[to]) {
                 const rate = data.rates[to];
                 output.value = (amount * rate).toFixed(2);
+                exchangeRateDiv.style.display= 'block';
                 exchangeRateDiv.textContent = `1 ${from} = ${rate} ${to}`;
             } else {
                 exchangeRateDiv.textContent = "Error fetching rates.";
